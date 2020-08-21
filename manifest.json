@@ -1,0 +1,46 @@
+{
+  "name": "VimTabs",
+  "version": "0.0.1",
+  "description": "Tab navigation using vim keymap",
+  "author": "Fedosov Anton",
+  "manifest_version": 2,
+  "short_name": "VimTabs",
+  "background": {
+    "scripts": ["vimtabs.js"],
+    "persistent": false
+  },
+  "commands": {
+    "moveTabLeft": {
+      "suggested_key": {
+        "default": "Shift+Alt+Left",
+        "windows": "Shift+Alt+Left",
+        "mac": "MacCtrl+Ctrl+H"
+      },
+      "description": "Move tab left"
+    },
+    "moveTabRight": {
+      "suggested_key": {
+        "default": "Shift+Alt+Right",
+        "windows": "Shift+Alt+Right",
+        "mac": "MacCtrl+Ctrl+L"
+      },
+      "description": "Move tab right"
+    },
+    "selectPreviousTab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "windows": "Ctrl+Shift+H",
+        "mac": "Ctrl+Shift+H"
+      },
+      "description": "Select tab left"
+    },
+    "selectNextTab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "windows": "Ctrl+Shift+L",
+        "mac": "Ctrl+Shift+L"
+      },
+      "description": "Select tab right"
+    }
+  }
+}
