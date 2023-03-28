@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Tab navigation using vim keymap",
   "author": "Fedosov Anton",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "short_name": "VimTabs",
   "background": {
-    "scripts": ["vimtabs.js"],
-    "persistent": false
+    "service_worker": "vimtabs.js",
+    "type": "module"
   },
   "commands": {
     "moveTabLeft": {
